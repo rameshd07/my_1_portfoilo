@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1D3C6B;
+    --seconry-color: #5DBB63;
+    --third-color: #444444;
+}
+
+dd {
+    font-family: '42dot Sans';
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Abril Fatface';
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: 'Aclonica';
+    color: var(--seconry-color);
+}
+
+h3 {
+    font-family: 'Aguafina Script';
+    color: var(--third-color);
+}
+
+ul {
+    font-family: 'Akronim';
+}
+
+body {
+    width: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 10px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    margin-right: 2%;
+}
+
+.name {
+    width: 18%;
+}
+
+.nav-bar a {
+    color: var(--seconry-color);
+    padding: 5px;
+    border-radius: 30px;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: var(--primary-color);
+    color: black;
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.button button {
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5%;
+    background-color: #007BFF;
+    margin-bottom: 100%;
+}
+
+.cv:hover {
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.profile img {
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.profile img:hover {
+    padding: 2px;
+    cursor: pointer;
+    scale: 1.2;
+    transition: all 1.5s;
+    border: 1px dotted var(--seconry-color);
+}
+
+.bio {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+}
+
+.bio h1 {
+    position: relative;
+    animation: anih1 1s ease;
+}
+
+@keyframes anih1 {
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.about {
+    width: 100%;
+    margin-top: 1%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.about dd {
+    text-indent: 5%;
+    font-size: large;
+    text-align: justify;
+    position: relative;
+    animation: anih1 1s ease-in;
+}
+
+.skill {
+    width: 80%;
+    place-self: center;
+    flex-wrap: wrap;
+    gap: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill1 {
+    width: 17%;
+    margin: 2%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black;
+}
+
+.sql {
+    border-radius: 100%;
+    place-self: center;
+}
+
+.project {
+    margin: 3%;
+    width: 40%;
+    height: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.text a {
+    color: #007acc;
+    transition: color 0.3s;
+
+}
+
+.det a:hover {
+    color: #005f99;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.text {
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    width: 90%;
+    font-family: 'Agu Display';
+}
+
+.anc {
+    text-align: center;
+    margin: 2%;
+}
+
+ul {
+    list-style: none;
+    margin: 2%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+}
+
+.Education {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.Education1 {
+    width: 40%;
+    height: 30vh;
+    margin: 4%;
+    display: flex;
+    box-shadow: 0px 0px 10px black;
+}
+
+.Education2 {
+    width: 40%;
+    height: 30vh;
+    margin: 4%;
+    display: flex;
+    box-shadow: 0px 0px 10px black;
+}
+
+.Contact {
+    margin-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact h3 {
+    padding: 5px;
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.Contact a {
+    margin-left: 10%;
+    padding: 5px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #ffffff;
+}
+
+@media only screen and (min-width:315px) and (max-width:800px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .profile {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .profile img {
+        align-self: center;
+    }
+
+    .bio {
+        width: 100%;
+        padding: 3%;
+    }
+
+    .skill {
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+
+    .skill1 {
+        width: 40%;
+        height: max-content;
+    }
+
+    .project {
+        width: 100%;
+        height: 70vh;
+        margin: 0px;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 70vh;
+    }
+
+    .text {
+        width: 90%;
+    }
+
+    .Education {
+        margin-top: 5%;
+        flex-direction: column;
+        width: 100%;
+        height: max-content;
+    }
+
+    .Education1,
+    .Education2 {
+        width: 93%;
+        height: max-content;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
